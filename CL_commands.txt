@@ -1,0 +1,2 @@
+convert SCSS to CSS: sass --watch SCSS.scss:CSS.css --style expanded --sourcemap=none
+convert SCSS to SASS: sass-convert SCSS.scss SASS.sass
