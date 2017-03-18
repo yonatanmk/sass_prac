@@ -1,0 +1,1 @@
+sass --watch SCSS.scss:CSS.css --style expanded --sourcemap=none
