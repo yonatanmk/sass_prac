@@ -9,7 +9,7 @@ $headersMap : (
 
 $len : length( $headers );
 
-$index : 1;
+$index : 1; //for while loop
 
 //@for $i from $len through 1 {
 //      #{ nth( $headers , $i ) } {
