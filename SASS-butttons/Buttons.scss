@@ -39,7 +39,7 @@ $colormap: (
          }
       } @else {
          .button.#{$color}:hover {
-            background: $val; 
+            background: $val;
          }
       }
    }
