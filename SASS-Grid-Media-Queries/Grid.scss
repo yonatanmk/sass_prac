@@ -6,13 +6,25 @@
    float: left;
 }
 
-$max: 16;
-
-@for $i from 1 through $max {
+@for $i from 1 through 16 {
 
    $equ: 100% / $i ;
 
    #grid.cell-#{ $i } > div {
       width: $equ;
    }
+}
+
+$map: ( 850: 12, 450: 6, 380: 3);
+
+@each $key, $val in $map {
+  @media all and (max-width: $key + px){
+
+    @for $i from 1 through $val {
+       $equ: 100% / $i ;
+       #grid.cell-#{ $key }-#{$i} > div {
+          width: $equ;
+       }
+    }
+  }
 }
